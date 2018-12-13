@@ -1,5 +1,4 @@
-
-// BUDGET CONTROLLER MODULE
+/* -------------------------------------- BUDGET CONTROLLER MODULE ---------------------------------------------------- */
 var budgetController = (function(){ // Indipendent Module creation used to keep the function private
     
     var Expense = function(id, description, value){ // Function constructor for Expenses 
@@ -135,7 +134,7 @@ var budgetController = (function(){ // Indipendent Module creation used to keep 
 
 })();
 
-// UI CONTROLLER MODULE
+/* ---------------------------------------- UI CONTROLLER MODULE ------------------------------------------------------ */
 var UIController = (function(){ // Independent Module
     
     var DOMstrings = { // Object for storing the DOM strings to retrieve from the HTML code
@@ -291,7 +290,7 @@ var UIController = (function(){ // Independent Module
 })();
 
 
-// GLOBAL APP CONTROLLER MODULE
+/* --------------------------------------------- GLOBAL APP CONTROLLER MODULE ----------------------------------------- */
 var appController = (function(budgetCtrl, UICtrl){
 
     var setUpEventListener = function(){ // Used for 'init' function
